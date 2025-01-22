@@ -1,0 +1,107 @@
+{
+  "preamble": {
+    "title": "waalge/aiken-mre-alias-overwriting",
+    "description": "Aiken contracts for project 'waalge/aiken-mre-alias-overwriting'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.9+2217206"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "a.placeholder.mint",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/MintRedeemer"
+        }
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/Params"
+          }
+        }
+      ],
+      "compiledCode": "586e010100323232323223225333004323232323253330093370e900018051baa001132533300a3370e6eb400d200813371e010911056f6f7073210014a06eb8c030c02cdd50008b1805980600198050011804801180480098031baa00114984d958dd7000ab9a5573aaae795d0aba21",
+      "hash": "784868255232ceddd87eca62f1751a5867daba7911c615dac19826ab"
+    },
+    {
+      "title": "a.placeholder.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/Params"
+          }
+        }
+      ],
+      "compiledCode": "586e010100323232323223225333004323232323253330093370e900018051baa001132533300a3370e6eb400d200813371e010911056f6f7073210014a06eb8c030c02cdd50008b1805980600198050011804801180480098031baa00114984d958dd7000ab9a5573aaae795d0aba21",
+      "hash": "784868255232ceddd87eca62f1751a5867daba7911c615dac19826ab"
+    },
+    {
+      "title": "b.placeholder.mint",
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/MintRedeemer"
+        }
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/Params"
+          }
+        }
+      ],
+      "compiledCode": "5876010100323232323223225333004323232323253330093370e900018051baa001132533300a3371e6eb800d2201056f6f7073210013375e6e9c021301049f0001ff0014a06eb8c030c02cdd50008b1805980600198050011804801180480098031baa00114984d958dd6000ab9a5573aaae795d0aba21",
+      "hash": "9126bfa680d19f366c132ce25399363e9c40e9cb5e0bd60114383b8e"
+    },
+    {
+      "title": "b.placeholder.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "parameters": [
+        {
+          "title": "params",
+          "schema": {
+            "$ref": "#/definitions/Params"
+          }
+        }
+      ],
+      "compiledCode": "5876010100323232323223225333004323232323253330093370e900018051baa001132533300a3371e6eb800d2201056f6f7073210013375e6e9c021301049f0001ff0014a06eb8c030c02cdd50008b1805980600198050011804801180480098031baa00114984d958dd6000ab9a5573aaae795d0aba21",
+      "hash": "9126bfa680d19f366c132ce25399363e9c40e9cb5e0bd60114383b8e"
+    }
+  ],
+  "definitions": {
+    "Index": {
+      "title": "Index",
+      "dataType": "integer"
+    },
+    "MintRedeemer": {
+      "title": "MintRedeemer",
+      "dataType": "bytes"
+    },
+    "Params": {
+      "title": "Params",
+      "dataType": "list",
+      "items": [
+        {
+          "$ref": "#/definitions/Index"
+        },
+        {
+          "$ref": "#/definitions/Index"
+        }
+      ]
+    }
+  }
+}
