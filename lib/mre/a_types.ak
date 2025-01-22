@@ -1,6 +1,8 @@
-use aiken/crypto.{ScriptHash}
 use aiken/collection.{Index}
+use aiken/crypto.{ScriptHash}
 
-pub type Params = ScriptHash 
+pub type Params =
+  ScriptHash
 
-pub type MintRedeemer = Index
+pub type MintRedeemer =
+  Index
